@@ -6,25 +6,33 @@ from time import sleep
 testdata = [
     {
         "name" : "Uberhaxornova",
-        "followers" : 12380,
+        "followers" : 2980000,
         "description" : "A gaming youtuber from 2013"
     },
     {
         "name": "Pewdiepie",
-        "followers": 901239,
-        "description": "A Sugondese PUBG professional"
+        "followers": 111000000,
+        "description": "A Sugondese Youtuber popular with teens"
     },
     {
         "name": "Prof Lando",
-        "followers": 12390,
+        "followers": 857000,
         "description": "A fembologist with a phD in waifuism"
-    }
+    },
+    {
+        "name": 'Dropout',
+        "followers": 14700000,
+        "description": 'Formerly Collegehumor, now a subscritption based streaming service with a variety of shows'
+    },
 ]
 
 print(art.title)
 print("Try and guess who has more Followers between the two Online Personalities\n")
 
 def calculateanswer(answer="", p1=0, p2=0):
+    '''Calculate if the user's answer is correct
+    if user answers A, compare if A is larger than B
+    if user answers B, compare if B is larger than A'''
     if answer.lower() == 'a':
         return p1 >= p2
     elif answer.lower() == 'b':
@@ -75,9 +83,12 @@ def game():
         # otherwise result is correct so add 1 to score
         score +=1
         print(art.correct)
-        sleep(0.5)
+        print(f"{player1['name']} has {player1['followers']} followers")
+        print(f"{player2['name']} has {player2['followers']} followers")
+        sleep(1)
         # make choice B into choice A
         player1 = player2
+        print("\n\n")
 
 def resetdata(deck):
     deck.extend(testdata)

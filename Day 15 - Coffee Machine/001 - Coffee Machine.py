@@ -139,6 +139,7 @@ def On():
             # Deduct the needed resources to make the order from the current resources
             for ingredients in order['ingredients']:
                 reso[ingredients] -= order['ingredients'][ingredients]
+            # money += paid but with extra steps
             paid = reso['money'] + float("{:.2f}".format(paid))
             reso['money'] = paid
             makeorder()

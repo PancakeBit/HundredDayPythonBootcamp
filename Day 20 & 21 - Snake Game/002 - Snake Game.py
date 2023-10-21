@@ -13,7 +13,7 @@ screen.setup(width=600, height=600)
 screen.title("Snake Game!!")
 screen.bgcolor('black')
 
-screen.tracer(n=0, delay=60)
+screen.tracer(n=0)
 screen.update()
 
 snake = Snake(5)

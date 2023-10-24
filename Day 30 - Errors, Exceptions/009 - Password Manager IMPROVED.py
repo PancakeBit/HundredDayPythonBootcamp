@@ -15,6 +15,7 @@ from pandas import read_csv
 
 # This also would be waaaay easier working with the json module but I want to understand
 # Pandas better so i'm using it to convert the file to dictionary
+# Since Pandas also allows the use of the mode method for automatic insertion of most frequent username
 
 FONT = ("Courier Prime",12)
 

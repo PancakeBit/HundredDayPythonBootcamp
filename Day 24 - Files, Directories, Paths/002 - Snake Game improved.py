@@ -21,9 +21,7 @@ snake = Snake(5)
 food = food.Food()
 score = scoreboard.Scoreboard()
 
-start = True
 screen.listen()
-
 screen.onkey(fun=snake.up, key='w')
 screen.onkey(fun=snake.left, key='a')
 screen.onkey(fun=snake.down, key='s')
@@ -32,6 +30,7 @@ screen.onkey(fun=snake.right, key='d')
 # press space to grow snake, for debugging purposes
 screen.onkey(fun=snake.eaten, key='space')
 
+start = True
 while start:
     screen.update()
     time.sleep(0.1)
@@ -43,13 +42,12 @@ while start:
     # if snake collides with wall
     if snake.head.xcor() > 280 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -280:
         score.gameover()
-        print(snake.head.pos())
-        start = False
+        snake.gameover()
     # if snake collides with self
     for part in snake.snake[1:]:
         if snake.head.distance(part) < 15:
             score.gameover()
-            start = False
+            snake.gameover()
     screen.update()
 
 screen.exitonclick()

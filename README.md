@@ -1,6 +1,8 @@
 # HundredDayPythonBootcamp
 Progress tracker for 100 Days of Code Pyton Bootcamp
 
+Day 42, More basic HTML concepts
+
 Day 41, Basic HTML lesson, will not bother
 
 Day 32, Cannot upload this day as it requires email and passwords put into plain text for testing purposes

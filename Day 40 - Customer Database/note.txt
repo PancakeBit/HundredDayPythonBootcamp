@@ -1,0 +1,12 @@
+I'm skipping this day because it's pretty dumb,
+it's just adding a "user" table to google sheets and sheety
+no password verification or specific row selection.
+
+Will implement these in the project(Day 39) eventually but not yet:
+Account Creation
+User Table
+User column in flight table
+if user is in user column, only then search for cheap flights
+Step 4: if a flight is not found check to see if other flights stop over to the destination??
+        I think????
+very unclear step no idea what it actually wants to do

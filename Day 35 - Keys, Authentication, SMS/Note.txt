@@ -1,0 +1,2 @@
+Skipping this lesson because it needs Twilio API
+generally understand the lesson anyway, but no way i'm going through the trouble
